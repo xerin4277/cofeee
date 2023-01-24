@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AllUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/homepage', function () {
-    return view('homepage');
-});
+Route::get('/',[AllUserController::class, 'homepage'])->name('homepage');
+Route::get('/welcome',[AllUserController::class, 'welcome']);
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
