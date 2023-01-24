@@ -3214,6 +3214,7 @@ textarea.form-control-lg {
   color: #000;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
+  width: 150px;
 }
 .btn-light:hover {
   color: #000;
@@ -7814,6 +7815,14 @@ textarea.form-control-lg {
 .bg-thirdary {
   --bs-bg-opacity: 1;
   background-color:#dac09f;
+}
+.bg-loc {
+  --bs-bg-opacity: 1;
+  background-color:#854442;
+}
+.bg-found {
+  --bs-bg-opacity: 1;
+  background-color:#3e3d3f;
 }
 
 .bg-secondary {

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AllUserController;
+use App\Http\Controllers\GoogleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[AllUserController::class, 'homepage'])->name('homepage');
 Route::get('/welcome',[AllUserController::class, 'welcome']);
 
-
+Route::get('google-autocomplete', [GoogleController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

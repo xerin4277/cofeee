@@ -1,4 +1,4 @@
  <!-- Footer-->
- <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div></div>
+ <footer class="bg-black py-3">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-white">Copyright &copy; 2023 - DOPE KAFÉ</div></div>
         </footer>

@@ -21,37 +21,80 @@
                 </div>
             </div>
         </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Announcements</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-                        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+        <!-- Announcement-->
+        <section class="page-section bg-primary" id="announce">
+        <h2 class="text-white mt-0 text-center">Announcements</h2>
+        <div id="carouselExampleCaptions" class="carousel slide relative text-center" data-bs-ride="carousel">
+            <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+               @php
+                $count =0;
+               @endphp
+               @foreach ($announcement as $announce)
+                <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="{{$count}}"
+                class="active"
+                ></button>
+                @php
+                $count++;
+               @endphp
+               @endforeach
+
+            </div>
+            <div class="carousel-inner relative w-full overflow-hidden">
+            @php
+                $count =0;
+                $class = "active";
+                @endphp
+                @foreach ($announcement as $announce)
+                @if($count==1)
+                @php
+                $class = "relative";
+               @endphp
+                   
+                @endif
+                <div class="carousel-item {{$class}} relative float-left w-full">
+                    <img
+                        src="{{$announce->image ? asset('storage/' . $announce->image) : asset('/images/no-image.png')}}" alt=""
+                    />
+                    <div class="carousel-caption hidden md:block absolute text-center">
+                        <h5 class="text-xl">{{$announce->title}}</h5>
+                        <p>{{$announce->description}}</p>
                     </div>
                 </div>
+                @php
+                $count++;
+               @endphp
+            @endforeach
             </div>
-        </section>
-        <!-- Services-->
-        <section class="page-section bg-thirdary" id="services">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">About Us</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="text-center ">
-                        <p>Taste and Dope Kofé and Gallery offers a unique coffee house environment unlike any other in Butuan City. We are not only a place to drop in and get 
-                            your morning cup of coffee (although you are more than welcome to do that), we are a place where you can sit down and enjoy that tailor-made cup of 
-                            coffee. If you need to work, we have a seating area created specifically for you. If you need to rest, we have a soft-seating area in front of a 
-                            stone fire place that is perfect for your weary mind and body. We offer a delicious variety of coffee from Dope Kofé made by our professionally 
-                            trained baristas. We have everything from classic coffee to our house made specialty beverages.  All of our sauces & syrups are made in-house with all 
-                            natural ingredients (no chemicals or preservatives) ensuring you the highest quality in taste & health.  You can complete your coffee with one of our 
-                            delicious sweet treats made by our very own baker. We look forward to serving you at Taste & See Coffee Shop and Gallery!</p>
-                    </div>
-                </div>
+            <button
+                class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
             </div>
+            @auth
+            <div class="text-center m-2">
+                <a class="btn btn-light btn-xl text-center" href="/edit/announcement">Edit</a>
+            </div>
+            @endauth
         </section>
+
+        
         <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid p-0">
@@ -149,7 +192,8 @@
                 </div>
             </div>
         </div>
-        <section class="page-section bg-thirdary" id="services">
+        <!-- About Us-->
+        <section class="page-section bg-thirdary" id="about">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">About Us</h2>
                 <hr class="divider" />
@@ -165,7 +209,41 @@
                     </div>
                 </div>
             </div>
-        </section>       
+        </section>
+        <!-- Location-->
+        <section class="page-section bg-loc" id="location">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Location</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="text-center ">
+                        <img src="assets/img/map.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FB LINK-->
+        <section class="page-section bg-primary" id="link">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center text-white mt-0">FB LINK</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder-->
+        <section class="page-section bg-found" id="founders">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center text-white mt-0">Founders</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    
+                </div>
+            </div>
+        </section>
+       
        @include('homepage.layouts.footer')
 
 @endsection

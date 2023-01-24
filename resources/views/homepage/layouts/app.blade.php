@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en {{ str_replace('_', '-', app()->getLocale()) }} ">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>DOPE KAFÉ</title>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <style type="text/css">
+            #map {
+            height: 400px;
+            }
+        </style>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap Icons-->
@@ -19,6 +26,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+
 
 
     @yield('content')
