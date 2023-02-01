@@ -218,8 +218,8 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="text-center text-white">
                         <p>If you would like to pick-up your orders at our place, hope this map helps. Thank you. 🐝🍕</p>
-                         <a href="https://www.google.com/maps/place/Bee's+Pizza/@8.9374967,125.527056,18z/data=!4m5!3m4!1s0x3301c1ea10ddce1d:0xacea294a91c6dab4!8m2!3d8.9375063!4d125.5264971" target="_blank">
-                            B4 L7 Cinderella Crownvilla, Luz Village, Brgy Bayanihan, Butuan City, Philippines</a>
+                         <h6><a href="https://www.google.com/maps/place/Bee's+Pizza/@8.9374967,125.527056,18z/data=!4m5!3m4!1s0x3301c1ea10ddce1d:0xacea294a91c6dab4!8m2!3d8.9375063!4d125.5264971" target="_blank">
+                            B4 L7 Cinderella Crownvilla, Luz Village, Brgy Bayanihan, Butuan City, Philippines</a></h6>
                         <img class="img-loc" src="assets/img/map.png">
                     </div>
                 </div>
