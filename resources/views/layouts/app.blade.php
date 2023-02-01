@@ -4,8 +4,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="author" content="" />
-        <title>DOPE KAFÉ</title>
+        <title>Bee’s Pizza</title>
+        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <style type="text/css">
@@ -14,7 +16,7 @@
             }
         </style>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/logoo.png" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -24,8 +26,20 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
+    <body class="font-sans antialiased">
+        <div class="min-h-screen bg-amber-200 ">
+            @include('layouts.navigation')
+
+            <!-- Page Heading -->
+            @if (isset($header))
+                <header class="bg-white dark:bg-gray-800 shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endif
 
             <!-- Page Content -->
             <main>

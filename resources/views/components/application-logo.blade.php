@@ -1,1 +1,1 @@
-<img src  ="assets/img/coffee.png" width = "150px"/>
+<img src  ="/images/logoo.png" width = "150px"/>

@@ -10,12 +10,11 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">A fine cup of coffee for all the good people.</h1>
+                        <h1 class="text-white font-weight-bold ">Bee’s Pizza</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75"> It doesn't matter where you're from - or how you feel. There's always peace in a strong cup of coffee.</p>
-                        <p class="text-white-75 ml-20">- Gabriel Bá, Daytripper</p>
+                        <p class="text-white-75">Yummy, affordable, homemade pizza the whole family will love!.</p>
                         <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
                     </div>
                 </div>
@@ -87,104 +86,110 @@
                 <span class="visually-hidden">Next</span>
             </button>
             </div>
-            @auth
-            <div class="text-center m-2">
-                <a class="btn btn-light btn-xl text-center" href="/edit/announcement">Edit</a>
-            </div>
-            @endauth
+            
         </section>
 
         
         <!-- Portfolio-->
         <div id="portfolio">
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0 text-center ">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.png" title="Vegetarian">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.png" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Americano</div>
-                                <div class="project-category text-black-50">S-₱100 | M-₱120 | L-₱150</div>
+                                <div class="project-name">Vegetarian</div>
+                                <div class="project-category text-black-50">₱145.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.png" title="Beef n Mushroom">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.png" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Espresso</div>
-                                <div class="project-category text-black-50">S-₱110 | M-₱130 | L-₱150</div>
+                                <div class="project-name">Beef n Mushroom</div>
+                                <div class="project-category text-black-50">₱170.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.png" title="Pepperoni">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.png" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Latte</div>
-                                <div class="project-category text-black-50">S-₱99 | M-₱115 | L-₱130</div>
+                                <div class="project-name">Pepperoni</div>
+                                <div class="project-category text-black-50">₱150.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.png" title="Spicy Chorizo">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.png" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Red Eye</div>
-                                <div class="project-category text-black-50">S-₱100 | M-₱125 | L-₱150</div>
+                                <div class="project-name">Spicy Chorizo</div>
+                                <div class="project-category text-black-50">₱155.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.png" title="Ham and Cheese">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.png" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-name">Mocha</div>
-                                <div class="project-category text-black-50">S-₱90 | M-₱110 | L-₱130</div>
+                                <div class="project-name">Ham and Cheese</div>
+                                <div class="project-category text-black-50">₱125.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.png" title="3-Cheese">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.png" alt="..." />
                             <div class="portfolio-box-caption p-3">
-                                <div class="project-name">Irish</div>
-                                <div class="project-category text-black-50">S-₱110 | M-₱125 | L-₱155</div>
+                                <div class="project-name">3-Cheese</div>
+                                <div class="project-category text-black-50">₱155.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.png" title="Bacon n Mushroom">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.png" alt="..." />
                             <div class="portfolio-box-caption p-3">
-                                <div class="project-name">Lungo</div>
-                                <div class="project-category text-black-50">S-₱100 | M-₱120 | L-₱150</div>
+                                <div class="project-name">Bacon n Mushroom</div>
+                                <div class="project-category text-black-50">₱160.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/8.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/8.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/8.png" title="Hawaiian">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/8.png" alt="..." />
                             <div class="portfolio-box-caption p-3">
-                                <div class="project-name">Cappuccino</div>
-                                <div class="project-category text-black-50">S-₱105 | M-₱125 | L-₱155</div>
+                                <div class="project-name">Hawaiian</div>
+                                <div class="project-category text-black-50">₱135.00</div>
                                 
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/9.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/9.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/9.png" title="Spinach Garlic">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/9.png" alt="..." />
                             <div class="portfolio-box-caption p-3">
-                                <div class="project-name">Affogato</div>
-                                <div class="project-category text-black-50">S-₱120 | M-₱140 | L-₱165</div>
+                                <div class="project-name">Spinach Garlic</div>
+                                <div class="project-category text-black-50">₱170.00</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/new.png" title="Smores">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/new.png" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-name">Smores</div>
+                                <div class="project-category text-black-50">₱160.00</div>
                                 
                             </div>
                         </a>
@@ -195,17 +200,12 @@
         <!-- About Us-->
         <section class="page-section bg-thirdary" id="about">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">About Us</h2>
+                <h2 class="text-center mt-0 text-white">About Us</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
-                    <div class="text-center ">
-                        <p>Taste and Dope Kofé and Gallery offers a unique coffee house environment unlike any other in Butuan City. We are not only a place to drop in and get 
-                            your morning cup of coffee (although you are more than welcome to do that), we are a place where you can sit down and enjoy that tailor-made cup of 
-                            coffee. If you need to work, we have a seating area created specifically for you. If you need to rest, we have a soft-seating area in front of a 
-                            stone fire place that is perfect for your weary mind and body. We offer a delicious variety of coffee from Dope Kofé made by our professionally 
-                            trained baristas. We have everything from classic coffee to our house made specialty beverages.  All of our sauces & syrups are made in-house with all 
-                            natural ingredients (no chemicals or preservatives) ensuring you the highest quality in taste & health.  You can complete your coffee with one of our 
-                            delicious sweet treats made by our very own baker. We look forward to serving you at Taste & See Coffee Shop and Gallery!</p>
+                    <div class="text-center text-white">
+                    <p>CONTACT NUMBER: 0951 467 0000</p>
+                    <img class="img-about" src="assets/img/abo.png">
                     </div>
                 </div>
             </div>
@@ -213,34 +213,31 @@
         <!-- Location-->
         <section class="page-section bg-loc" id="location">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Location</h2>
+                <h2 class="text-center mt-0 text-white">Location</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
-                    <div class="text-center ">
-                        <img src="assets/img/map.png">
+                    <div class="text-center text-white">
+                        <p>If you would like to pick-up your orders at our place, hope this map helps. Thank you. 🐝🍕</p>
+                         <a href="https://www.google.com/maps/place/Bee's+Pizza/@8.9374967,125.527056,18z/data=!4m5!3m4!1s0x3301c1ea10ddce1d:0xacea294a91c6dab4!8m2!3d8.9375063!4d125.5264971" target="_blank">
+                            B4 L7 Cinderella Crownvilla, Luz Village, Brgy Bayanihan, Butuan City, Philippines</a>
+                        <img class="img-loc" src="assets/img/map.png">
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- FB LINK-->
-        <section class="page-section bg-primary" id="link">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center text-white mt-0">FB LINK</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    
                 </div>
             </div>
         </section>
 
         <!-- Founder-->
         <section class="page-section bg-found" id="founders">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center text-white mt-0">Founders</h2>
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="text-center text-white mt-0">Founder</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
-                    
+                <h5 class="text-white">Ferl Macalit-Hernandez </h5>
                 </div>
+                <div class="text-center text-white"><img class="img-found" src="assets/img/founder.jpg"><h6>Social Links</h6></div>
+                
+                <a href="https://www.facebook.com/ferl.macalithernandez" target="_blank"><img src="assets/img/fb.png" class="img-fb"></a>
+                <a href="https://www.facebook.com/beespizza" target="_blank"><img src="assets/img/logoo.png" class="img-log"></a>
             </div>
         </section>
        
